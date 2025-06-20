@@ -6,10 +6,10 @@ import { useNavigate } from "react-router-dom";
 const Center = () => {
   const navigate = useNavigate();
 
-  const handleBookNow = () => {
+  const handleMovies = () => {
     const isAuthenticated = localStorage.getItem('isAuthenticated') === 'true';
     if (isAuthenticated) {
-      navigate('/booking');
+      navigate('/movielist');
     } else {
       navigate('/log');
     }
@@ -23,7 +23,7 @@ const Center = () => {
           Book your tickets in seconds and enjoy exclusive premieres,
           special screenings, and the latest blockbusters in premium theaters.
         </p>
-        <button className="cs-book-btn" onClick={handleBookNow}>Book Now</button>
+        <button className="cs-movie-btn" onClick={handleMovies}>Movies</button>
       </div>
       <div className="cs-center-right">
         <Carousel />
