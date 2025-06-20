@@ -20,6 +20,7 @@ const MovieDetails = () => {
   }
 
   return (
+    <div className="movie-whole">
     <div className="movie-details-container">
       {/* Navigation Bar */}
       <div className="movie-nav">
@@ -97,6 +98,7 @@ const MovieDetails = () => {
           ))}
         </div>
       </div>
+    </div>
     </div>
   );
 };

@@ -1,28 +1,31 @@
-/* Base Styles */
+.movie-whole{
+  max-width: 1400px;
+  background-color: black;
+}
+
 .movie-details-container {
-  background-color: #f8f9fa;
-  color: #333;
+  background: linear-gradient(to bottom, #12141f, #0b0f1a);
+  color: #fff;
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 20px;
-  max-width: 1200px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
-/* Navigation */
 .movie-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #2c2c3d;
 }
 
 .back-btn {
   background: none;
   border: none;
-  color: #e63946;
+  color: #ffb347;
   font-size: 16px;
   cursor: pointer;
   display: flex;
@@ -34,7 +37,7 @@
 }
 
 .back-btn:hover {
-  background-color: #f0f0f0;
+  background-color: rgba(255, 179, 71, 0.1);
 }
 
 .nav-links {
@@ -43,14 +46,15 @@
 }
 
 .nav-links span {
-  color: #666;
+  color: #a6a2a2;
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
+  transition: color 0.2s ease;
 }
 
 .nav-links span:hover {
-  color: #e63946;
+  color: #ffb347;
 }
 
 /* Movie Header */
@@ -63,9 +67,14 @@
 .movie-poster {
   width: 280px;
   height: 420px;
-  border-radius: 8px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(54, 54, 54, 0.6);
+  transition: transform 0.3s ease;
+}
+
+.movie-poster:hover {
+  transform: translateY(-5px);
 }
 
 .movie-poster img {
@@ -81,7 +90,8 @@
 .movie-info h1 {
   font-size: 32px;
   margin: 0 0 15px 0;
-  color: #222;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .engagement-stats {
@@ -89,7 +99,7 @@
   align-items: center;
   gap: 20px;
   margin-bottom: 20px;
-  color: #666;
+  color: #bbb;
 }
 
 .likes, .rating {
@@ -100,46 +110,48 @@
 }
 
 .likes {
-  color: #e63946;
+  color: #ff5e62;
 }
 
 .rating {
-  color: #ffb703;
+  color: #f1c40f;
 }
 
 .question {
   font-style: italic;
   font-size: 14px;
+  color: #a6a2a2;
 }
 
 .details-row {
   display: flex;
   gap: 15px;
   margin-bottom: 12px;
-  color: #555;
+  color: #bbb;
   font-size: 15px;
 }
 
 .book-button {
-  background: linear-gradient(to right, #e63946, #ff758f);
+  background: linear-gradient(to right, #ff5e62, #ffb347);
   color: white;
   border: none;
   padding: 12px 24px;
   font-size: 16px;
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: 30px;
   cursor: pointer;
   margin-top: 15px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 8px rgba(255, 94, 98, 0.3);
 }
 
 .book-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(230, 57, 70, 0.3);
+  box-shadow: 0 6px 12px rgba(255, 94, 98, 0.4);
 }
 
 .release-date {
-  color: #666;
+  color: #a6a2a2;
   font-size: 14px;
   margin-top: 10px;
 }
@@ -151,14 +163,14 @@
 
 .section h2 {
   font-size: 24px;
-  color: #222;
+  color: #ffb347;
   margin-bottom: 15px;
   padding-bottom: 8px;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #2c2c3d;
 }
 
 .section p {
-  color: #555;
+  color: #bbb;
   line-height: 1.6;
   max-width: 800px;
 }
@@ -175,22 +187,24 @@
   display: flex;
   align-items: center;
   gap: 15px;
-  background-color: white;
+  background: linear-gradient(to bottom, #1a1e2e, #12141f);
   padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  transition: transform 0.2s ease;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  border: 1px solid #2c2c3d;
 }
 
 .cast-member:hover {
-  transform: translateY(-3px);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
 }
 
 .cast-avatar {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background-color: #e63946;
+  background: linear-gradient(to right, #ff5e62, #ffb347);
   color: white;
   display: flex;
   align-items: center;
@@ -202,13 +216,13 @@
 .cast-info h4 {
   margin: 0;
   font-size: 16px;
-  color: #222;
+  color: #fff;
 }
 
 .cast-info p {
   margin: 5px 0 0;
   font-size: 14px;
-  color: #666;
+  color: #a6a2a2;
 }
 
 /* Responsive Design */

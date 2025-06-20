@@ -1,9 +1,9 @@
-/* Base Styles */
+/* Base Styles - Dark Theme */
 .movie-list-container {
   display: flex;
   min-height: 100vh;
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #12141f;
+  color: #fff;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
 }
@@ -14,14 +14,14 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background: linear-gradient(to right, #e63946, #ff758f);
+  background: linear-gradient(to right, #ff5e62, #ffb347);
   color: white;
   border: none;
   padding: 12px 20px;
   border-radius: 30px;
   font-weight: 600;
   z-index: 100;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   align-items: center;
   gap: 8px;
 }
@@ -30,12 +30,12 @@
   font-size: 16px;
 }
 
-/* Filters */
+/* Filters - Dark Theme */
 .filters {
   width: 280px;
   padding: 20px;
-  background-color: white;
-  border-right: 1px solid #e0e0e0;
+  background-color: #1a1e2e;
+  border-right: 1px solid #2c2c3d;
   height: 100vh;
   position: sticky;
   top: 0;
@@ -46,7 +46,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  color: #e63946;
+  color: #ffb347;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -54,7 +54,7 @@
 
 .filter-section {
   margin-bottom: 1.5rem;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #2c2c3d;
   padding-bottom: 1rem;
 }
 
@@ -67,13 +67,13 @@
 
 .filter-section-header h3 {
   font-weight: 600;
-  color: #333;
+  color: #fff;
   font-size: 1rem;
 }
 
 .clear-btn {
   font-size: 0.875rem;
-  color: #e63946;
+  color: #ff5e62;
   background: none;
   border: none;
   cursor: pointer;
@@ -87,25 +87,25 @@
 }
 
 .tag {
-  border: 1px solid #e0e0e0;
-  color: #555;
+  border: 1px solid #444;
+  color: #bbb;
   padding: 0.5rem 0.75rem;
   border-radius: 20px;
   font-size: 0.875rem;
   cursor: pointer;
-  background-color: white;
+  background-color: #1e1e2f;
   transition: all 0.2s ease;
 }
 
 .tag:hover {
-  border-color: #e63946;
-  color: #e63946;
+  border-color: #ff5e62;
+  color: #fff;
 }
 
 .tag.selected {
-  background-color: #e63946;
-  border-color: #e63946;
-  color: white;
+  background: linear-gradient(to right, #ff5e62, #ffb347);
+  border-color: transparent;
+  color: #fff;
 }
 
 /* Browse Button */
@@ -115,22 +115,23 @@
   padding: 0.75rem;
   border: none;
   color: white;
-  background: linear-gradient(to right, #e63946, #ff758f);
+  background: linear-gradient(to right, #ff5e62, #ffb347);
   border-radius: 6px;
   cursor: pointer;
   font-weight: 600;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .browse-btn:hover {
   transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 94, 98, 0.3);
 }
 
 /* Main Content */
 .main-content {
   flex: 1;
   padding: 20px;
-  background-color: white;
+  background-color: #12141f;
 }
 
 /* Navigation Tabs */
@@ -139,19 +140,19 @@
   gap: 1.5rem;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid #2c2c3d;
 }
 
 .nav-tabs span {
   font-weight: 600;
-  color: #666;
+  color: #a6a2a2;
   cursor: pointer;
   padding-bottom: 0.5rem;
   position: relative;
 }
 
 .nav-tabs span.active {
-  color: #e63946;
+  color: #ffb347;
 }
 
 .nav-tabs span.active::after {
@@ -161,7 +162,7 @@
   left: 0;
   width: 100%;
   height: 3px;
-  background-color: #e63946;
+  background: linear-gradient(to right, #ff5e62, #ffb347);
   border-radius: 3px 3px 0 0;
 }
 
@@ -171,17 +172,17 @@
   gap: 1.5rem;
   margin-bottom: 1.5rem;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #f0f0f0;
+  border-bottom: 1px solid #2c2c3d;
 }
 
 .secondary-nav span {
   font-weight: 500;
-  color: #666;
+  color: #a6a2a2;
   cursor: pointer;
 }
 
 .secondary-nav span:hover {
-  color: #e63946;
+  color: #ffb347;
 }
 
 /* Movie Section Header */
@@ -195,7 +196,7 @@
 .movie-section-header h2 {
   font-size: 1.75rem;
   font-weight: bold;
-  color: #222;
+  color: #fff;
 }
 
 .lang-chips {
@@ -205,47 +206,48 @@
 }
 
 .lang-chip {
-  border: 1px solid #e0e0e0;
-  color: #555;
+  border: 1px solid #444;
+  color: #bbb;
   padding: 0.5rem 0.75rem;
   border-radius: 20px;
   font-size: 0.875rem;
   cursor: pointer;
-  background-color: white;
+  background-color: #1e1e2f;
   transition: all 0.2s ease;
 }
 
 .lang-chip:hover {
-  border-color: #e63946;
-  color: #e63946;
+  border-color: #ff5e62;
+  color: #fff;
 }
 
 .lang-chip.selected {
-  background-color: #e63946;
-  border-color: #e63946;
-  color: white;
+  background: linear-gradient(to right, #ff5e62, #ffb347);
+  border-color: transparent;
+  color: #fff;
 }
 
 /* Coming Soon */
 .coming-soon {
-  background-color: #f8f9fa;
-  border: 1px solid #e0e0e0;
+  background-color: #1a1e2e;
+  border: 1px solid #2c2c3d;
   padding: 1.25rem;
   border-radius: 8px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .coming-soon h3 {
   font-size: 1.125rem;
   font-weight: 600;
-  color: #222;
+  color: #fff;
 }
 
 .coming-soon a {
-  color: #e63946;
+  color: #ffb347;
   font-size: 0.875rem;
   font-weight: 600;
   text-decoration: none;
@@ -267,16 +269,16 @@
 }
 
 .movie-card {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: linear-gradient(to bottom, #1a1e2e, #12141f);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(54, 54, 54, 0.6);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   overflow: hidden;
 }
 
 .movie-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 12px 24px rgba(54, 54, 54, 0.8);
 }
 
 .movie-card img {
@@ -291,7 +293,7 @@
 
 .likes,
 .rating {
-  background-color: #f8f9fa;
+  background-color: #1e1e2f;
   font-size: 0.875rem;
   padding: 0.5rem 0.75rem;
   border-radius: 20px;
@@ -302,24 +304,24 @@
 }
 
 .likes {
-  color: #e63946;
+  color: #ff5e62;
 }
 
 .rating {
-  color: #ffb703;
+  color: #f1c40f;
 }
 
 .movie-title {
   font-size: 1.125rem;
-  font-weight: 600;
-  color: #222;
+  font-weight: 700;
+  color: #fff;
   margin-bottom: 0.5rem;
 }
 
 .movie-age,
 .movie-langs {
   font-size: 0.875rem;
-  color: #666;
+  color: #bbb;
   margin-top: 0.25rem;
 }
 
@@ -332,7 +334,7 @@
     height: 100vh;
     z-index: 90;
     transition: transform 0.3s ease;
-    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.3);
   }
 
   .filters.show {
@@ -385,5 +387,9 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
+  }
+
+  .movie-card img {
+    height: 300px;
   }
 }

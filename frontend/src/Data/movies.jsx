@@ -4,17 +4,17 @@ export const movies = [
     id: "kuberaa",
     title: "Kuberaa",
     age: "UA13+",
-    langs: "Tamil, Telugu, Hindi, Kannada",
+    langs: "Tamil, Telugu, Hindi, Kannada, Malyalam",
     likes: "250.7K",
     genres: ["Drama", "Action"],
     formats: ["2D", "IMAX 3D"],
-    image: "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/kuberaa-et00390532-1750069799.jpg",
+    image: "https://m.media-amazon.com/images/M/MV5BM2Q3ZWUxOGEtODU4OS00NjU0LTllZWYtODAxZmRkNDZmYmE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
     duration: "3h 2m",
     description: "Kuberaa offers a glimpse into a world where ambition, power, and morality collide.",
     cast: [
       { name: "Dhanush", role: "Actor" },
       { name: "Nagajuna Akkineni", role: "Actor" },
-      { name: "Rashmika Mandanna", role: "Actor" },
+      { name: "Rashmika Mandanna", role: "Actress" },
       { name: "Jim Sarbh", role: "Actor" },
       { name: "Daily Tahil", role: "Actor" }
     ],
@@ -28,13 +28,12 @@ export const movies = [
     likes: "1.5K",
     genres: ["Thriller", "Crime"],
     formats: ["2D"],
-    image: "https://via.placeholder.com/400x600?text=DNA",
-    duration: "2h 15m",
-    description: "A thrilling crime investigation that tests the limits of forensic science.",
+    image: "https://assetscdn1.paytm.com/images/cinema/DNa1-f81d2350-476a-11f0-b70a-572de7245650.jpg",
+    duration: "2h 20m",
+    description: "DNA is a Tamil movie starring Nimisha Sajayan and Atharvaa Murali in prominent roles. It is directed by Nelson Venkatesan.",
     cast: [
-      { name: "Vikram Prabhu", role: "Actor" },
-      { name: "Priya Bhavani Shankar", role: "Actress" },
-      { name: "Rahul Dev", role: "Actor" }
+      { name: "Atharvaa Murali", role: "Actor" },
+      { name: "Nimisha Sajayan", role: "Actress" }
     ],
     releaseDate: "Now Showing"
   },
@@ -44,33 +43,75 @@ export const movies = [
     age: "UA13+",
     langs: "Hindi, Tamil, Telugu",
     likes: "92.8K",
-    genres: ["Drama", "Family"],
+    genres: ["Drama", "Sports", "Comedy", "Family"],
     formats: ["2D", "HOUSEFULL 5A"],
-    image: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-OTIuOUsgTGlrZXM%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00444869-hhkddvwdpc-portrait.jpg",
-    duration: "2h 30m",
-    description: "An inspiring story about overcoming challenges and finding your place in the world.",
+    image: "https://images.fandango.com/ImageRenderer/0/0/redesign/static/img/default_poster.png/0/images/masterrepository/Fandango/240515/sitaarezameenpar-posterart.jpg",
+    duration: "2h 39m",
+    description: "Sitaare Zameen Par is an entertaining and heartwarming film filled with joy, laughter, and happiness. It follows Gulshan, a smug basketball coach sentenced to community service after a drunk driving incident. Assigned to train a team of Neurodivergent adults, he starts off with prejudice and condescension-only to discover that they`re the ones teaching him how to truly live.",
     cast: [
       { name: "Aamir Khan", role: "Actor" },
-      { name: "Kareena Kapoor", role: "Actress" }
+      { name: "Genelia Deshmukh", role: "Actress" },
+      { name: "Dolly Ahluwalia", role: "Actress" }
     ],
-    releaseDate: "Coming Soon"
+    releaseDate: "20 Jun 2025"
   },
   {
     id: "dragon",
     title: "How to Train Your Dragon",
     age: "UA 7+",
-    langs: "English",
+    langs: "English, Hindi, Telugu, Tamil",
     rating: "9.2",
     votes: "9K",
-    genres: ["Animation", "Adventure", "Fantasy"],
-    formats: ["3D", "MX4D 3D"],
-    image: "https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OS4yLzEwICA5SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00420723-qmnbcnqfsk-portrait.jpg",
-    duration: "1h 38m",
-    description: "A young Viking befriends a dragon and changes his village's perspective on the creatures.",
+    genres: ["Animation", "Adventure", "Fantasy", "Family"],
+    formats: ["2D", "3D", "MX4D 3D"],
+    image: "https://sm.ign.com/ign_in/cover/h/how-to-tra/how-to-train-your-dragon-live-action_zbyf.jpg",
+    duration: "2h 5m",
+    description: "On the rugged isle of Berk, a Viking boy named Hiccup defies centuries of tradition by befriending a dragon named Toothless. However, when an ancient threat emerges that endangers both species, Hiccup`s friendship with Toothless becomes the key to forging a new future. Together, they must navigate the delicate path toward peace, soaring beyond the boundaries of their worlds and redefining what it means to be a hero and a leader.",
     cast: [
-      { name: "Jay Baruchel", role: "Voice Actor" },
-      { name: "Gerard Butler", role: "Voice Actor" }
+      { name: "JMason Thames", role: "Hiccup" },
+      { name: "Nico Parker", role: "Astrid Hofferson" },
+      { name: "Gerard Butler", role: "Stoick the Vast"},
+      { name: "Nick Frost", role: "Gobber the Belch"}
     ],
     releaseDate: "Now Showing"
-  }
+  },
+  {
+    id: "thuglife",
+    title: "Thug Life",
+    age: "UA 16+",
+    langs: "Tamil, Hindi, Telugu, Malayalam",
+    rating: "4.9",
+    votes: "9K",
+    genres: ["Action", "Crime", "Drama", "Thriller"],
+    formats: ["2D", "IMAX 2D", "4DX"],
+    image: "https://media5.bollywoodhungama.in/wp-content/uploads/2024/11/Thug-Life-322x483.jpeg",
+    duration: "",
+    description: "Tamil action drama about a former gangster, Rangaraya Sakthivel, who seeks redemption and confronts betrayal from his brother and adopted son after a violent gang war. The film explores themes of loyalty, power, and revenge within the context of a ruthless underworld. ",
+    cast: [
+      { name: "kamal Haasan", role: "Rangaraya Sakthivel" },
+      { name: "Silambarasan T", role: "Actor" },
+      { name: "trisha Krishnan", role: "Actress"}
+    ],
+    releaseDate: "Now Showing"
+  },
+  {
+    id: "elio",
+    title: "Elio",
+    age: "UA 7+",
+    langs: "English, Hindi, Telugu, Tamil",
+    rating: "9.2",
+    votes: "9K",
+    genres: ["Animation", "Adventure", "Comedy", "Sci-Fi", "Family"],
+    formats: ["2D", "3D", "4DX 3D", "MX4D 3D"],
+    image: "https://d3lzcn6mbbadaf.cloudfront.net/media/details/ANI-20250320143202.jpg",
+    duration: "1h 37m",
+    description: "When a young boy is mistaken for Earth`s ambassador by aliens, he`s thrown into a wild, emotional, and hilarious space adventure. From the makers of Toy Story and Inside Out, Elio is Disney Pixar`s latest heartwarming tale about finding where you truly belong.",
+    cast: [
+      { name: "Yonas Kibreab", role: "Actress" },
+      { name: "Zoe Saldana", role: "Actress" },
+      { name: "Brad Garrett", role: "Actor"},
+      {name: "Jameela Jamil", role: "Actress"}
+    ],
+    releaseDate: "Now Showing"
+  },
 ];
